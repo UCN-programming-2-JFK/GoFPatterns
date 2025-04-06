@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>957</x>
+      <y>616</y>
+      <w>429</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>*RegionMidAdaptee*
+--
+
+--
++getDiagnoses(int year, String ssn): List&lt;Diagnosis&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>957</x>
+      <y>506</y>
+      <w>528</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>*RegionNorthAdaptee*
+--
+
+--
++getDiagnoses(LocalDate from, LocalDate to, String ssn): List&lt;Diagnosis&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>319</x>
+      <y>341</y>
+      <w>451</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+*DiagnosisRetrieverAdapter*
+--
+
+--
++getDiagnoses(String socialSecurityNumber): List&lt;Diagnosis&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>957</x>
+      <y>715</y>
+      <w>407</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>*RegionSouthAdaptee*
+--
+
+--
++getAllDiagnosesForPatient(String ssn): List&lt;Diagnosis&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>407</x>
+      <y>627</y>
+      <w>451</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>*RegionMidAdapter*
+--
+
+--
++getDiagnoses(String socialSecurityNumber): List&lt;Diagnosis&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>407</x>
+      <y>517</y>
+      <w>451</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>*RegionNorthAdapter*
+--
+
+--
++getDiagnoses(String socialSecurityNumber): List&lt;Diagnosis&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>407</x>
+      <y>726</y>
+      <w>451</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>*RegionSouthAdapter*
+--
+
+--
++getDiagnoses(String socialSecurityNumber): List&lt;Diagnosis&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>913</x>
+      <y>451</y>
+      <w>594</w>
+      <h>374</h>
+    </coordinates>
+    <panel_attributes>*Adaptees*
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>297</x>
+      <y>286</y>
+      <w>583</w>
+      <h>539</h>
+    </coordinates>
+    <panel_attributes>*Adapters*
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>429</x>
+      <y>429</y>
+      <w>33</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>847</x>
+      <y>517</y>
+      <w>132</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>847</x>
+      <y>638</y>
+      <w>132</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>847</x>
+      <y>726</y>
+      <w>132</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>374</x>
+      <y>429</y>
+      <w>55</w>
+      <h>253</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;210.0;30.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>429</y>
+      <w>99</w>
+      <h>363</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;310.0;70.0;310.0</additional_attributes>
+  </element>
+</diagram>
