@@ -3,7 +3,7 @@
 
 ## Singleton ([code](https://github.com/UCN-programming-2-JFK/GoFPatterns/tree/main/src/singletonpattern))
 ### The problem: You need to coordinate data or actions across your application, but every once in a while, other devs on your team mistakenly instantiate additional instances of the class that is supposed to be the coordinator or the authoritative version. This leads to your application getting out of sync.
-### The solution: Having a class which can only be instantiated once.
+### The solution: Code a class which can only be instantiated once.
 
 ![UML](https://github.com/user-attachments/assets/9334f6c4-5f19-485f-97d8-69a155a89055)
 
