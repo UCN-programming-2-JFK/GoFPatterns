@@ -8,6 +8,10 @@
 ![UML](https://github.com/user-attachments/assets/9334f6c4-5f19-485f-97d8-69a155a89055)
 
 ## Adapter ([code](https://github.com/UCN-programming-2-JFK/GoFPatterns/tree/main/src/adapterpattern))
+
+### The problem: You need to interact with different pieces of code or services (the adaptees) which all provide the same functionality but vary in how they are interacted with (signature, naming, etc.).
+### The solution: Define an interface and code adapter classes which all implement this interface and individually bridge the gap to their respective adaptee.
+
 ![UML](https://github.com/user-attachments/assets/3bdcc4ab-d1b2-4dfe-9885-2d82d4345828)
 
 ## Strategy ([code](https://github.com/UCN-programming-2-JFK/GoFPatterns/tree/main/src/strategypattern))
